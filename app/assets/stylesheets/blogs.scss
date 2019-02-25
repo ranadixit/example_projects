@@ -1,0 +1,251 @@
+// Place all the styles related to the blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.footer
+{
+	margin-top:45px;
+	padding-top:5px;
+	border-top:1px solid #eaeaea;
+	color:#777;
+
+}
+footer a:hover
+{
+	colr:#222;
+}
+footer small
+{
+	float:left;
+}
+footer ul{
+	float:right;
+	list-style:none;
+}
+footer ul li{
+	float:left;
+	margin-left:15px;
+}
+.center
+{
+	text-align:center;
+}
+.blog-actions
+{	
+	
+	border-top:1px solid #eaeaea;
+	padding-top:5px;
+
+}
+.description
+{
+	margin-top:0px;
+}
+.blog_title
+{
+	margin-bottom:30px;
+}
+.login_back
+{
+	padding-top:2%;
+	background:#F5F5F5;
+	padding-bottom:1%;
+	border-radius:10px;
+}
+.signup_back
+{
+	padding-top:2%;
+	background:#F5F5F5;
+	padding-bottom:1%;
+	border-radius:10px;
+}
+.float-left
+{
+	float:left;
+}
+.blog-well
+{
+	position:relative;
+	margin-top:10%;
+}
+.profile-blog
+{
+	position:absolute;
+	bottom:20px;
+}
+.link:hover
+{
+	text-decoration:none;
+}
+.profile-image
+{
+	height:150px;
+	width:150px;
+	border-radius:50%;
+	border:1px solid #999;
+	padding:3px;
+	box-shadow:0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+
+}
+/*................blog-user.......................*/
+.index-blog
+{
+	box-shadow:0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+	border-radius:5px;
+	margin-top:3%;
+	padding:0px;
+}
+.blog-user{
+	height:81px;
+	border-bottom:1px solid rgba(0,0,0,.125);
+	float:left;
+	padding:15px;
+	padding-left:15px;
+}
+.user-image
+{
+	height:50px;
+	width:50px;
+	border-radius:50%;
+	float:left;
+}
+.user-name
+{
+	float:left;
+	height:10px;
+	margin-left:10px;
+	margin-top:1px;
+	color:#0ba9f5;
+}
+.blog-date
+{
+	color:#999;
+	margin-left:58px;
+	position: absolute; 
+	margin-top: 23px;
+}
+.blog-title
+{	padding-top:5px;
+	color:blue;
+}
+.blog-body
+{
+	color:#757575;
+	height:50px;
+
+}
+.list-blog-footer
+{
+	color:#757575;
+	height:50px;
+	padding-left:10%;
+	padding-top:2%;
+}
+.profile-blog-image
+{
+	height:50px;
+	width:50px;
+	border-radius:50%;	
+}
+.show-blog
+{
+	box-shadow:0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+	border-radius:5px;
+	margin-top:3%;
+	padding:0px;
+	
+}
+/*........................Comment.....................*/
+.comment-blog
+{
+	box-shadow:0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+	margin-top:0.2%;
+	border-radius:5px;
+	padding-bottom:15px;
+
+}
+.comment-form
+{
+	padding-left:0px;
+
+}
+.comment-block
+{
+	padding-top:4%;
+	margin-bottom:2%;
+}
+.comments{
+	padding:0px;
+	padding-top:2px;
+	margin-bottom:2%;
+	border-bottom: 1px solid #eee
+}
+.comment-user
+{
+	height:30px;
+	width:30px;
+	border-radius:50%;
+	float:left;
+}
+.comment-blog-image
+{
+	height:30px;
+	width:30px;
+	border-radius:50%;	
+}
+.comment-user-name
+{
+	margin-left:13%;
+	margin-top:1%;
+}
+.comment-user-date
+{
+	float:right;
+	margin-top:1%;
+	color:#6c757d;
+}
+.comment-text
+{
+	margin-left:13%;
+	margin-top:2%;
+}
+/*-----------------Departmet list--------------*/
+.department-list
+{
+	box-shadow:0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+	margin-top:2.5%;
+	border-radius:5px;
+	padding:0px;
+}
+.dep-menu
+{	
+	padding-top:3%;
+	height:50px;
+	background:white;
+	border:0px;
+	font-size:18px;
+	color:#757575;
+}
+.dep-menu:hover
+{
+	border:1px solid #757575;
+	box-shadow:0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+	border-radius:4px;
+}
+.dep-menu-hedding
+{
+	padding-top:3%;
+	height:50px;
+	background:white;
+	border:0px;
+	font-size:18px;
+	color:#757575;
+}
+.dep-menu-hedding:hover
+{
+	border:1px solid #757575;
+	box-shadow:0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+	border-radius:4px;
+}

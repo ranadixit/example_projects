@@ -1,0 +1,25 @@
+<nav class="navbar navbar-inverse" style="background:rgba(38,45,61,0.95); box-shadow:0 0 1px rgba(0,0,0,.125), 0 1px 10px rgba(0,0,0,.2);font-color: white;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <%= link_to 'Blogger App',index_path,class:"navbar-brand"%>
+     
+    </div>
+    <ul class="nav navbar-nav">
+      <li><%=link_to 'List Blogs ',index_path%></li>
+      <li><%= link_to 'New Blog',new_blog_path(current_user.id)%></li>
+     
+      <li><%=link_to 'Profile',user_profile_path(current_user.id)%></li>
+    </ul>
+     <%= form_with(scope: :blog,url: index_path,method: :get,html:{class:"navbar-form navbar-left",role:"form"}, local: true) do |form| %>
+      <div class="form-group">     
+         <%= form.text_field :blog_search,placeholder:"search",class:"form-control" %>
+      </div>
+          <%= form.submit "search",class:"btn btn-default" %>
+   <% end %>
+    <ul class="nav navbar-nav navbar-right">
+      <li><%= link_to "Edit Profile", edit_user_path(current_user.id)%></li>
+      <li><%= link_to '<i class="glyphicon glyphicon-log-out"></i> Logout'.html_safe,logout_path,method:"delete"%></li>
+    </ul>
+  </div>
+</nav>
+  
