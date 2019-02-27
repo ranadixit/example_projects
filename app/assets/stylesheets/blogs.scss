@@ -1,16 +1,26 @@
-// Place all the styles related to the blogs controller here.
+//Place all the styles related to the blogs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
+body
+{
+	overflow-x: hidden;
+}
+.symbol-image{
+	height:30px;
+	width:30px;
+	border-radius:50%;
+	padding-left:0px;
+	margin-top:10px;
+	margin-right:10px;
+}
 .footer
 {
 	margin-top:45px;
 	padding-top:5px;
 	border-top:1px solid #eaeaea;
 	color:#777;
-
 }
 footer a:hover
 {
@@ -83,6 +93,7 @@ footer ul li{
 {
 	height:150px;
 	width:150px;
+	object-fit: cover;
 	border-radius:50%;
 	border:1px solid #999;
 	padding:3px;
@@ -117,7 +128,7 @@ footer ul li{
 	height:10px;
 	margin-left:10px;
 	margin-top:1px;
-	color:#0ba9f5;
+	color:#6b6565;
 }
 .blog-date
 {
@@ -128,25 +139,28 @@ footer ul li{
 }
 .blog-title
 {	padding-top:5px;
-	color:blue;
+	font-color:#7b7676;
+}
+.blog-title a
+{
+	color:#7b7676;
 }
 .blog-body
 {
 	color:#757575;
-	height:50px;
-
 }
 .list-blog-footer
 {
 	color:#757575;
 	height:50px;
-	padding-left:10%;
+	padding-left:80%;
 	padding-top:2%;
 }
 .profile-blog-image
 {
 	height:50px;
 	width:50px;
+	object-fit: cover;
 	border-radius:50%;	
 }
 .show-blog
@@ -157,11 +171,30 @@ footer ul li{
 	padding:0px;
 	
 }
+.blog-image-show
+{
+	padding:0px;
+	
+}
+.blog-image-show1
+{
+	padding:0px;
+	border-radius:1%;
+	margin-bottom:3%;
+}
+.blog-show-user{
+	height:81px;
+	border-bottom:1px solid rgba(0,0,0,.125);
+	float:left;
+	padding:15px;
+	padding-left:1px;
+	margin-bottom:2%;
+}
 /*........................Comment.....................*/
 .comment-blog
 {
 	box-shadow:0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
-	margin-top:0.2%;
+	margin-top: 8.6%;
 	border-radius:5px;
 	padding-bottom:15px;
 
@@ -193,6 +226,7 @@ footer ul li{
 {
 	height:30px;
 	width:30px;
+	object-fit: cover;
 	border-radius:50%;	
 }
 .comment-user-name
@@ -248,4 +282,22 @@ footer ul li{
 	border:1px solid #757575;
 	box-shadow:0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
 	border-radius:4px;
+}
+/*---------------------------Admin----------------------------------------------*/
+/*-----------------------------------------nevbar-----------------------------*/
+#dropdown-sub-menu
+{
+	color:white;
+	font-size:midium;
+}
+#dropdown-sub-menu:hover{
+	color:#9d9d9d;
+}
+.admin-table-blog-image
+{
+	height:30px;
+	width:50px;
+}
+th{
+	text-align:center;
 }

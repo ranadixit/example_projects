@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_23_084304) do
+ActiveRecord::Schema.define(version: 2019_02_26_111221) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -76,6 +76,7 @@ ActiveRecord::Schema.define(version: 2019_02_23_084304) do
     t.string "password"
     t.bigint "department_id"
     t.string "gender"
+    t.integer "role", default: 0
     t.index ["department_id"], name: "index_users_on_department_id"
   end
 

@@ -11,8 +11,8 @@
 
   <body>
     <% if session[:user_id]!=nil%>
-      <%= render 'layouts/nevbar'%>
-      <%=render 'layouts/messages'%>
+      <%= render 'layouts/admin_navebar'%>
+      <%= render 'layouts/messages'%>
     <%else%>
        <%= render 'layouts/nevbar_home'%>
        <%=render 'layouts/messages'%>

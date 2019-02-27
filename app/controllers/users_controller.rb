@@ -42,33 +42,31 @@ class UsersController < ApplicationController
     def login
          @user = User.find_by(email: params[:user][:email])
         if @user
-            puts @user.email
-            puts @user.password
             if @user.password == params[:user][:password]
-                session[:user_id] = @user.id
-                flash[:success]="#{@user.user_name} was successfully login"
-                redirect_to user_profile_path(session[:user_id]) 
+                if @user.role == 'admin'
+                    session[:user_id] = @user.id
+                    flash[:success]="#{@user.user_name} was successfully login"
+                    redirect_to admin_users_path
 
+                else
+                    session[:user_id] = @user.id
+                    flash[:success]="#{@user.user_name} was successfully login"
+                    redirect_to user_profile_path(session[:user_id]) 
+
+                end
             else
                 flash[:danger]="Plase enter correct password"
-                render :newlogin
-                
-                            
+                render :newlogin               
             end
         else
-            flash[:danger]="Plase enter correct value"
-            render :newlogin
-            
-            
+            flash[:danger]="Plase enter correct email"
+            render :newlogin 
         end
-    end
-
+    end    
     def logout
         session[:user_id] = nil
         flash[:warning]="Logged out!"
         render :newlogin
-        
-         
     end
 
     def profile

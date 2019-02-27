@@ -70,7 +70,7 @@ class BlogsController < ApplicationController
   private
 
   def params_blog
-    params.require(:blog).permit(:title, :description, :user_id, :department_id)
+    params.require(:blog).permit(:title, :description, :user_id, :department_id, :blog_image  )
   end
 
   def department_wish(dep_id)

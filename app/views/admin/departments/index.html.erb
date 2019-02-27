@@ -1,0 +1,24 @@
+<div class="jumbotron admin-table">
+  <h1 align="center">List Departments</h1>
+<table class="table table-bordered"style="text-align: center;color:#4e4949;">
+    <thead style="text-align: center;background: white;">
+      <tr style="background:rgba(38,45,61,0.95);color: white;text-align: center;">
+        <th>#</th>
+        <th>Department Name</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody  style="background: white;">
+      <% @department.each.with_index do |data,index|%>
+      <tr>
+        <td><%= index+1 %></td>
+        <td><%= data.department_name %></td>
+        <td><%=link_to "Edit",edit_admin_department_path(data),class:"btn btn-xs btn-success float"%>
+            <%=link_to "show",admin_department_path(data),class:"btn btn-xs btn-info"%>
+            <%=link_to "Delete",admin_department_path(data),class:"btn btn-xs btn-danger",method: 
+            :delete,data: { confirm: 'Are you sure?' } %></td>    
+      </tr>
+      <% end %>      
+    </tbody>
+  </table>
+</div>

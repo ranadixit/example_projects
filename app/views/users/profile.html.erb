@@ -4,8 +4,6 @@
 	 <div class="profile1-image center">
 		<%if @user.profile_image.attached?%>
 			<%= image_tag(@user.profile_image,class:"profile-image")%>
-			<%puts "================================="%>
-			<%puts url_for(@user.profile_image)%>
 		<%else%>
 			<%if @user.gender == 'male' %>		
 				<%=image_tag 'man.png',class:"profile-image"%>
