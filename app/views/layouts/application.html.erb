@@ -10,16 +10,8 @@
   </head>
 
   <body>
-    <% if session[:user_id]!=nil%>
-      <%= render 'layouts/nevbar'%>
-      <%=render 'layouts/messages'%>
-    <%else%>
-       <%= render 'layouts/nevbar_home'%>
-       <%=render 'layouts/messages'%>
-    <%end%>
     <div class="container main-container">
-    <%= yield %>
-  </div>
-  <%= render 'layouts/footer'%>
+      <%= yield %>
+    </div>
   </body>
 </html>

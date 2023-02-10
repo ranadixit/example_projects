@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: blogger_app_development
+  database: url_app_development
 
   host: localhost
   username: dixit
@@ -61,7 +61,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: blogger_app_test
+  database: url_app_test
 
   host: localhost
   username: dixit
@@ -88,6 +88,6 @@ test:
 #
 production:
   <<: *default
-  database: blogger_app_production
+  database: url_app_production
   username: blogger_app
   password: <%= ENV['BLOGGER_APP_DATABASE_PASSWORD'] %>
